@@ -303,7 +303,7 @@ static PyObject *connected_components(Adjacency *self){ //connected
 
 
 static PyMemberDef Adjacency_members[] = {
-        {"vertices", T_SHORT, offsetof(Adjacency, vertices), 0, PyDoc_STR("vertices of the graph")},
+        {"vertices", T_SHORT, offsetof(Adjacency, vcs), 0, PyDoc_STR("vertices of the graph")},
         {"edges",    T_SHORT, offsetof(Adjacency, edges),    0, PyDoc_STR("edges of the graph")},
         {NULL}
 };
